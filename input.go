@@ -28,7 +28,6 @@ func bot() (int, int) {
 		column_bot := random()
 		line_bot := random()
 		if boardArr[line_bot-1][column_bot-1] == "[X]" || boardArr[line_bot-1][column_bot-1] == "[0]" {
-			fmt.Println("Этот ход не возможен. Ячейка уже занята")
 		} else {
 			return column_bot, line_bot
 		}

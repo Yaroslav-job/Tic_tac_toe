@@ -29,11 +29,11 @@ func board(column int, line int, type_player string) {
 		for k := 0; k < 3; k++ {
 			if i == line-1 && k == column-1 && type_player == "player" {
 				boardArr[i][k] = "[X]"
-			} else if i == line-1 && k == column-1 && type_player == "bot" {
+			} else if i == line-1 && k == column-1 && type_player == "bot" || i == line-1 && k == column-1 && type_player == "player2" {
 				boardArr[i][k] = "[0]"
 			}
 		}
 	}
 	print_board()
-	check_win()
+	check_win(type_player)
 }
