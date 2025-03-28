@@ -6,6 +6,9 @@ import (
 
 func main() {
 	var choise int
+
+	clear()
+
 	fmt.Println("Выберите тип игры: \n1 - Player vs Player \n2 - Player vs Bot")
 	for {
 		fmt.Scan(&choise)

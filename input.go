@@ -27,7 +27,7 @@ func bot() (int, int) {
 	for {
 		column_bot := random()
 		line_bot := random()
-		if boardArr[line_bot-1][column_bot-1] == "[X]" || boardArr[line_bot-1][column_bot-1] == "[0]" {
+		if boardArr[line_bot-1][column_bot-1] == "[❌]" || boardArr[line_bot-1][column_bot-1] == "[⭕]" {
 		} else {
 			return column_bot, line_bot
 		}
